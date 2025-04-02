@@ -49,6 +49,7 @@ public class EmployeeController {
 			for (FieldError error : bindingResult.getFieldErrors()) {
 				errorMap.put(error.getField(), error.getDefaultMessage());
 				log.error("Field error: {} - {}", error.getField(), error.getDefaultMessage());
+				log.error("Field error: {} - {}", error.getField(), error.getDefaultMessage());
 			}
 			
 			ValidationErrorResponseDto errorResponse = new ValidationErrorResponseDto(
